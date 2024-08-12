@@ -1,0 +1,112 @@
+
+
+.container {
+  background-color: #ebebeb;
+  border-radius: 14px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.profile-img {
+  width: 450px; /* Increased size */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  padding-bottom: 100px;
+}
+
+.logout-btn {
+  background-color: #000048;
+   /* Light blue background color */
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px; /* Adjust the padding to your preference */
+  border-radius: 14px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.logout-btn img {
+  width: 20px; /* Adjust the image size as needed */
+  height: 20px;
+  margin-right: 10px; /* Add some space between the image and the button text */
+}
+
+.logout-btn button {
+  background: transparent;
+  border: none;
+  color: white; /* Text color */
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+.info-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.personal, .account {
+  flex: 1;
+  background-color: #000048;
+  border-radius: 14px;
+  padding: 20px;
+  color: #fff;
+}
+
+
+
+.account-details, .personal-details {
+  background-color: #fff; /* White background for details */
+  border-radius: 14px;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.avatar {
+  width: 220px; /* Increased size */
+  object-fit: cover;
+  object-position: center;
+}
+
+.name {
+  color: #000;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.job-title {
+  color: #000;
+  opacity: 0.75;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.info-item {
+  color: #464646;
+  opacity: 0.75;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}

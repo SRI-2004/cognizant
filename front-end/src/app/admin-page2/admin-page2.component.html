@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="admin-page2.component.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a7462a3-86e2-4c9f-ae69-33a079f1a629?" alt="Logo" class="logo">
+        </div>
+        <div class="div-7">
+          <button class="logout-button" (click)="navigateToLogin()">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea8f6b4a-9a39-4c28-85ab-3a49dc1ef1e8?" alt="Logout" class="logout-icon">
+              Logout
+          </button>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="dashboard-container">
+            <div class="dashboard">
+                <h1>Dashboard</h1>
+                <div class="active-users">
+                    <button class="active-users-button" (click)="navigateToHist()">Login History</button>
+                </div>
+            </div>
+        </div>
+        <div class="login-history-container">
+            <div class="login-history">
+                <h2>Current Active Users</h2>
+                <table class="log-table">
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Login Time</th>
+                            <th>IP Address</th>
+                            <th>MAC Address</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of activeUsers">
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.loginTime | date: 'yyyy-MM-dd HH:mm:ss' }}</td>
+                            <td>{{ user.ip }}</td>
+                            <td>{{ user.mac }}</td>
+                            <td>{{ user.age }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

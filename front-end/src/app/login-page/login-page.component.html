@@ -1,0 +1,27 @@
+<div class="login-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a7462a3-86e2-4c9f-ae69-33a079f1a629?"
+    class="img"
+  />
+  <div class="login-form">
+    <h1>Welcome back!</h1>
+    <p>Enter your details to login</p>
+    <div class="form-input">
+      <label for="yourUserId">User ID</label>
+      <input type="text" id="yourUserId" placeholder="Enter your user ID" />
+    </div>
+    <div class="form-input">
+      <label for="yourInputId">Password</label>
+      <input type="password" id="yourInputId" placeholder="***********" />
+    </div>
+    <div class="form-options">
+      <div class="remember-me">
+        <input type="checkbox" id="rememberMe" />
+        <label for="rememberMe">Remember me</label>
+      </div>
+      <button class="forgot-password">Forgot password ?</button>
+    </div>
+    <button class="login-button" (click)="loginAdmin()">Log in</button>
+  </div>
+</div>

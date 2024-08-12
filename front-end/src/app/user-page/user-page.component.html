@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="profile">
+      <img class="profile-img" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea293f41-9110-4677-b3a1-fcca86d845e1?" alt="Profile Image">
+      <div class="logout-btn">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea8f6b4a-9a39-4c28-85ab-3a49dc1ef1e8?" />
+        <button (click)="navigateToLogin()">Log out</button>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="personal">
+        <h2>Personal Info</h2>
+        <div class="personal-details">
+          <p class="name">{{ user?.name }}</p>
+          <p class="info-item">Position: {{ user?.job }}</p>
+          <p class="info-item">Email: {{ user?.email }}</p>
+          <p class="info-item">Phone Number: {{ user?.phoneNumber }}</p>
+          <p class="info-item">Location: {{ user?.location }}</p>
+        </div>
+      </div>
+      <div class="account">
+        <h2>Account Info</h2>
+        <div class="account-details">
+          <p class="info-item">Last Login: {{ user?.loginTime | date }}</p>
+          <p class="info-item">Session Duration: {{ getSessionDuration() }}</p>
+          <p class="info-item">Email Status: Verified</p>
+          <p class="info-item">Profile ID: {{ user?.id }}</p>
+          <p class="info-item">
+            Account Email:
+            <a [href]="'mailto:' + user?.email" target="_blank">{{ user?.email }}</a>
+          </p>
+          <p class="info-item">Account created: {{ user?.accountCreatedDate | date }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
